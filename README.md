@@ -18,19 +18,19 @@ Welcome to the ultimate project starter, built to kick off your next front-end a
 
 Clone this repo and dive in:
 
-# 🧰 Clone the project
+### 🧰 Clone the project
 ```bash
 git clone https://github.com/smalakargh/Starter-Template.git
 ```
-# 📁 Navigate into the directory
+### 📁 Navigate into the directory
 ```bash
 cd Starter-Template
 ```
-# 📦 Install dependencies
+### 📦 Install dependencies
 ```bash
 npm install
 ```
-# 🔥 Start the dev server
+### 🔥 Start the dev server
 ```bash
 npm run dev
 ```

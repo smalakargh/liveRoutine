@@ -22,13 +22,20 @@ Clone this repo and dive in:
 
 ```bash
 # 🧰 Clone the project
-git clone https://github.com/your-username/vite-framer-tailwind-reacticon-starter.git
+git clone https://github.com/smalakargh/Starter-Template.git
+```
 
+```bash
 # 📁 Navigate into the directory
 cd vite-framer-tailwind-reacticon-starter
+```
 
+```bash
 # 📦 Install dependencies
 npm install
+```
 
+```bash
 # 🔥 Start the dev server
 npm run dev
+```

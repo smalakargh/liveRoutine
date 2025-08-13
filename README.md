@@ -1,38 +1,44 @@
-# ⚡ Vite + Framer Motion + Tailwind CSS + React Icons + Poppins(Google-Font) – Starter Template
+# 📚 Real-Time Class Routine Web App
 
-Welcome to the ultimate project starter, built to kick off your next front-end adventure with speed, elegance, and style. This setup combines the blazing-fast bundling of **Vite**, the fluid animations of **Framer Motion**, the utility-first design of **Tailwind CSS**, and the crisp iconography of **React Icons** – all wrapped up in one streamlined template.
-
----
-
-## 📦 What’s Included
-
-- ⚡ **Vite** – Instant dev server + ultra-fast HMR
-- 🎞️ **Framer Motion** – Sleek motion and animation for React
-- 🎨 **Tailwind CSS** – Rapid UI styling with utility classes
-- 🔤 **React Icons** – Popular icons at your fingertips
-- ⭐ **Google-Fonts** - Poppins
+A responsive, real-time class routine tracker built with **React** and **Tailwind CSS**. It shows live countdowns to your current and upcoming classes, supports break time logic, and delivers a clean, motivational UI.
 
 ---
 
-## 🚀 Getting Started
+## ✨ Features
 
-Clone this repo and dive in:
+- ⏳ **Live countdown** to class start and end (hours, minutes, seconds)
+- 📘 **Current class details**: subject, code, teacher, room
+- 🔜 **Next class preview** (non-clickable)
+- 🧘 **Break time support** with countdown and labels
+- 🕒 **12-hour time format** with AM/PM
+- 🗓️ **Only today's routine shown**
+- ✅ **"Enough for today"** message when the day ends
+- 🎬 **GIF** when classes are over
+- 📅 **Next day class preview** with day name
 
-### 🧰 Clone the project
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React
+- 🎨 Tailwind CSS
+- 🧠 Custom time logic (IST timezone)
+- 📦 Modular component structure
+
+---
+
+## 🤝 Contribution
+
+Contributions are welcome! Feel free to:
+
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🧩 Submit pull requests
+
+To contribute:
+
 ```bash
-git clone https://github.com/smalakargh/Starter-Template.git
-```
-### 📁 Navigate into the directory
-```bash
-cd Starter-Template
-```
-### 📦 Install dependencies
-```bash
+git clone https://github.com/your-username/class-routine-app.git
+cd class-routine-app
 npm install
-```
-### 🔥 Start the dev server
-```bash
-npm run dev
-```
-
-> 🛠️ **Maintained with care by `Smalakar`**
+npm start

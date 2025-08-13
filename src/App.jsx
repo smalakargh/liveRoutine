@@ -19,7 +19,7 @@ export default function App() {
   );
 
   return (
-    <main className="relative">
+    <main className="relative bg-[#b5b2b5] p-2">
     <Navbar/>
     <div className="bg-[#b5b2b5] min-h-screen flex flex-col items-center p-4 poppins">
       <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] mt-6 rounded-lg overflow-hidden flex flex-col">

@@ -7,6 +7,7 @@ import { useTicker } from "./hooks/useTicker";
 import { findTodayAndNext } from "./utils/findTodayAndNext";
 import Footer from "./components/Rou-Footer";
 import Navbar from "./components/Rou-Navbar";
+import Report from "./components/Report";
 
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
   );
 
   return (
-    <>
+    <main className="relative">
     <Navbar/>
     <div className="bg-[#b5b2b5] min-h-screen flex flex-col items-center p-4 poppins">
       <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] mt-6 rounded-lg overflow-hidden flex flex-col">
@@ -28,7 +29,7 @@ export default function App() {
           current={current}
           upcomingDayName={upcomingDayName}
           todayName={todayName}
-        />
+          />
   
         <CenterStatus
           now={now}
@@ -37,13 +38,14 @@ export default function App() {
           current={current}
           upcoming={upcoming}
           upcomingDayName={upcomingDayName}
-        />
+          />
       </div>
         <BottomBar upcoming={upcoming} upcomingDayName={upcomingDayName} todayName={todayName} />
       </div>
     </div>
       <Footer/>
-    </>
+      <Report/>
+    </main>
     
   );
 }

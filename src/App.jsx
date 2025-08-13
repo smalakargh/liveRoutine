@@ -21,7 +21,7 @@ export default function App() {
     <>
     <Navbar/>
     <div className="bg-[#b5b2b5] min-h-screen flex flex-col justify-center items-center p-4 poppins">
-      <div className="bg-[#b5b2b5] h-[70vh] w-[35vh] rounded-lg overflow-hidden flex flex-col">
+      <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] rounded-lg overflow-hidden flex flex-col">
       <div className="border-2 border-white flex flex-col rounded-lg overflow-hidden h-full w-full mb-3">
         <TopBar
           now={now}
@@ -29,7 +29,7 @@ export default function App() {
           upcomingDayName={upcomingDayName}
           todayName={todayName}
         />
-
+  
         <CenterStatus
           now={now}
           nowMin={nowMin}

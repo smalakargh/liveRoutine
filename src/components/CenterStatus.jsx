@@ -67,7 +67,10 @@ export default function CenterStatus({
         {current
           ? `${formatTime12(current.start)} — ${formatTime12(current.end)}`
           : upcoming
-          ? `${formatTime12(upcoming.start)} — ${formatTime12(upcoming.end)}`
+          ? (<>
+          <div>{`${formatTime12(upcoming.start)} — ${formatTime12(upcoming.end)}`}</div>
+          <div className="mt-2">{`${upcoming.subject}`}</div>
+          </>)
           : ""}
       </div>
 

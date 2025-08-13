@@ -67,17 +67,19 @@ export default function CenterStatus({
         {current
           ? `${formatTime12(current.start)} — ${formatTime12(current.end)}`
           : upcoming
-          ? (<>
-          <div>{`${formatTime12(upcoming.start)} — ${formatTime12(upcoming.end)}`}</div>
-          <div className="mt-2">{`${upcoming.subject}`}</div>
-          </>)
+          ? ""
           : ""}
       </div>
 
-      {isNextDay && (
-        <div className="text-xs text-white opacity-80">
+      {isNextDay && (<>
+        <div className="text-[12px] text-white opacity-80">
           Next class on <span className="font-semibold">{upcomingDayName}</span>
         </div>
+        <main className="text-[12px] text-white opacity-80">
+          <div>{`${formatTime12(upcoming.start)} — ${formatTime12(upcoming.end)}`}</div>
+          <div className="">{`${upcoming.subject}`}</div>
+        </main>
+          </>
       )}
 
       {!current && !upcoming && (

@@ -1,3 +1,4 @@
+import { BsCalendar2Date } from "react-icons/bs";
 import { formatTime12 } from "../utils/time";
 
 export default function TopBar({ now, current, upcomingDayName, todayName }) {
@@ -14,7 +15,7 @@ export default function TopBar({ now, current, upcomingDayName, todayName }) {
 
   return (
     <div className="w-full bg-purple-400 h-full text-white px-4 py-3 flex flex-col justify-center">
-      <div className="text-sm opacity-90">{headerText}</div>
+      <div className="text-sm opacity-90 flex items-center gap-2"><BsCalendar2Date />{headerText}</div>
       <div className="text-xl text-center text-[25px] font-semibold pt-6 pb-2">
         {current
           ? current.type === "break"

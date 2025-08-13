@@ -1,20 +1,44 @@
-import { FaGithubAlt } from 'react-icons/fa'
-import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri'
-import { SiFramer, SiVite } from 'react-icons/si'
+import { useMemo } from "react";
+import { schedule } from "./data/schedule";
+import TopBar from "./components/TopBar";
+import CenterStatus from "./components/CenterStatus";
+import BottomBar from "./components/BottomBar";
+import { useTicker } from "./hooks/useTicker";
+import { findTodayAndNext } from "./utils/findTodayAndNext";
+import Footer from "./components/Rou-Footer";
+import Navbar from "./components/Rou-Navbar";
 
-function App() {
+
+export default function App() {
+  const now = useTicker(1000);
+
+  const { todayName, nowMin, current, upcoming, upcomingDayName } = useMemo(
+    () => findTodayAndNext(schedule, now),
+    [now]
+  );
+
   return (
     <>
-     <div className='bg-zinc-900 h-screen w-screen text-white flex justify-center items-center font-[poppins] p-6'>
-      <main className='p-6'>
-        <div className='flex gap-2'>Idea By <a href='https://github.com/smalakargh' target='_blank' rel='noopener noreferrer' className='text-zinc-400 flex items-center gap-2'><FaGithubAlt fontSize={25}/>Smalakar</a></div>
-        <div className='text-4xl font-bold flex flex-wrap gap-2 items-center mt-4'>
-        React<RiReactjsLine className='text-blue-500' /> + Vite<SiVite className='text-green-500'/> + Framer-Motion<SiFramer className='text-purple-500' /> + Tailwind-CSS<RiTailwindCssFill className='text-blue-500' /> + React Icons<RiReactjsLine className='text-red-500' />
-        </div>
-      </main>
-     </div>
+    <Navbar/>
+    <div className="bg-[#b5b2b5] min-h-screen flex flex-col justify-center items-center p-4 poppins">
+      <div className="bg-[#b5b2b5] h-[70vh] w-[35vh] rounded-lg overflow-hidden flex flex-col">
+      <div className="border-2 border-white flex flex-col rounded-lg overflow-hidden h-full w-full mb-3">
+        <TopBar now={now} current={current} />
+        <CenterStatus
+          now={now}
+          nowMin={nowMin}
+          todayName={todayName}
+          current={current}
+          upcoming={upcoming}
+          upcomingDayName={upcomingDayName}
+        />
+      </div>
+        <BottomBar upcoming={upcoming} />
+      </div>
+    </div>
+      <Footer/>
     </>
-  )
+    
+  );
 }
 
-export default App

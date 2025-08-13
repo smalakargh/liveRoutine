@@ -20,8 +20,8 @@ export default function App() {
   return (
     <>
     <Navbar/>
-    <div className="bg-[#b5b2b5] min-h-screen flex flex-col justify-center items-center p-4 poppins">
-      <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] rounded-lg overflow-hidden flex flex-col">
+    <div className="bg-[#b5b2b5] min-h-screen flex flex-col items-center p-4 poppins">
+      <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] mt-6 rounded-lg overflow-hidden flex flex-col">
       <div className="border-2 border-white flex flex-col rounded-lg overflow-hidden h-full w-full mb-3">
         <TopBar
           now={now}

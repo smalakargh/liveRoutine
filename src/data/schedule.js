@@ -17,6 +17,9 @@ export const schedule = {
       { start: "09:50", end: "10:40", subject: "Data Structure & Algorithm", code: "PCC-CS301", teacher: "HB", room: "6009", type: "class" },
       { start: "10:40", end: "11:30", subject: "Mathematics-III (Differential Calculus)", code: "BSC-301", teacher: "KD", room: "6009", type: "class" },
       { start: "14:00", end: "14:50", subject: "Computer Organization Lab", code: "PCC-CS392", teacher: "LS, RC, SS3", room: "6001", type: "lab", group: "G1" },
+
+      { start: "20:00", end: "20:50", subject: "CO Lab 2 (Differential Calculus)", code: "PCC-CS392", teacher: "LS, RC, SS3", room: "6001", type: "lab", group: "G1" },
+      { start: "21:00", end: "21:50", subject: "Computer Organization Lab", code: "PCC-CS392", teacher: "LS, RC, SS3", room: "6001", type: "lab", group: "G1" },
   ],
 
   Thursday: [

@@ -6,11 +6,11 @@ export default function BottomBar({ upcoming, upcomingDayName, todayName }) {
 
   return (
     <div
-      className={`relative w-full h-[20%] px-4 py-3 flex flex-col rounded-lg justify-center items-center ${
-        dayIsOver ? "bg-green-500" : "bg-blue-400"
+      className={`relative w-full h-[20%] px-4 py-3 flex flex-col rounded-lg border-2 border-white justify-center items-center  ${
+        dayIsOver ? "bg-green-500 " : "bg-blue-400"
       } text-white`}
     >
-      <div className="absolute inset-0 bg-white/0 pointer-events-none select-none" />
+      <div className="absolute inset-0 bg-white/0 pointer-events-none select-none " />
       {dayIsOver ? (
         <>
           <img

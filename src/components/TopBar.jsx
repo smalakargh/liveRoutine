@@ -15,14 +15,14 @@ export default function TopBar({ now, current, upcomingDayName, todayName }) {
   return (
     <div className="w-full bg-purple-400 h-full text-white px-4 py-3 flex flex-col justify-center">
       <div className="text-sm opacity-90">{headerText}</div>
-      <div className="text-xl font-semibold pt-6 pb-2">
+      <div className="text-xl text-center text-[25px] font-semibold pt-6 pb-2">
         {current
           ? current.type === "break"
             ? "Break Time"
             : current.subject || current.type.toUpperCase()
           : noMoreToday
           ? (<div className="text-[28px] text-center">No More Classes Today !</div>)
-          : "No ongoing class"}
+          : (<div className="text-center text-[28px]">No ongoing class</div>)}
       </div>
       {current && current.type !== "break" && (
         <div className="text-xs opacity-90">

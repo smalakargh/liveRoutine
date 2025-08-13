@@ -5,6 +5,19 @@ export function nowIST() {
   return new Date(s);
 }
 
+export function formatTime12(hhmm) {
+  const [h, m] = hhmm.split(":").map(Number);
+  const date = new Date();
+  date.setHours(h, m, 0, 0);
+  return new Intl.DateTimeFormat("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "Asia/Kolkata",
+  }).format(date);
+}
+
+
 export function toMinutes(hhmm) {
   const [h, m] = hhmm.split(":").map(Number);
   return h * 60 + m;

@@ -15,8 +15,8 @@ export default function TopBar({ now, current, upcomingDayName, todayName }) {
 
   return (
     <div className="w-full bg-purple-400 h-full text-white px-4 py-3 flex flex-col justify-center relative">
-      <div className="w-2 h-2 bg-red-500 rounded-full absolute top-4 right-4 z-4"></div>
-      <div className="w-3 h-3 bg-red-400 rounded-full z-0 animate-ping absolute top-[15px] right-[14px]"></div>
+      <div className="w-2 h-2 bg-red-500 rounded-full absolute top-4 left-4 z-4"></div>
+      <div className="w-3 h-3 bg-red-400 rounded-full z-0 animate-ping absolute top-[14px] left-[14px]"></div>
       <div className="text-sm opacity-90 flex items-center gap-2"><BsCalendar2Date />{headerText}</div>
       <div className="text-xl text-center text-[25px] font-semibold pt-6 pb-2">
         {current

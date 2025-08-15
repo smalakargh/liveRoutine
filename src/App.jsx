@@ -22,7 +22,7 @@ export default function App() {
   return (
     <main className="relative bg-[#b5b2b5] p-2">
     <Navbar/>
-    <div className="bg-[#b5b2b5] flex flex-col items-center p-4 poppins gap-9 relative">
+    <div className="bg-[#b5b2b5] flex flex-col items-center p-4 poppins gap-[80px] mb-6 relative">
       <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] mt-6 rounded-lg overflow-hidden flex flex-col">
       <div className="border-2 border-white flex flex-col rounded-lg overflow-hidden h-full w-full mb-3">
         <TopBar

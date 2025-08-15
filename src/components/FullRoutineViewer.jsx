@@ -85,7 +85,7 @@ export default function FullRoutineViewer({ schedule }) {
             z-index: 2;
           }
         `}</style>
-        <span className="text-sm font-medium mb-8">Full Routine</span>
+        <span className="text-sm font-medium">Full Routine</span>
       </button>
    </div>
     { open && (

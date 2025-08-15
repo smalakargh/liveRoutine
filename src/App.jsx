@@ -8,6 +8,7 @@ import { findTodayAndNext } from "./utils/findTodayAndNext";
 import Footer from "./components/Rou-Footer";
 import Navbar from "./components/Rou-Navbar";
 import Report from "./components/Report";
+import FullRoutineViewer from "./components/FullRoutineViewer";
 
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <main className="relative bg-[#b5b2b5] p-2">
     <Navbar/>
-    <div className="bg-[#b5b2b5] min-h-screen flex flex-col items-center p-4 poppins">
+    <div className="bg-[#b5b2b5] flex flex-col items-center p-4 poppins gap-9 relative">
       <div className="bg-[#b5b2b5] h-[70vh] w-[40vh] mt-6 rounded-lg overflow-hidden flex flex-col">
       <div className="border-2 border-white flex flex-col rounded-lg overflow-hidden h-full w-full mb-3">
         <TopBar
@@ -42,6 +43,7 @@ export default function App() {
       </div>
         <BottomBar upcoming={upcoming} upcomingDayName={upcomingDayName} todayName={todayName} />
       </div>
+      <FullRoutineViewer schedule={schedule} />
     </div>
       <Footer/>
       <Report/>

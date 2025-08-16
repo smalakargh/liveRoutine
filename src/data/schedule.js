@@ -35,5 +35,5 @@ Friday: [
    { start: "09:50", end: "13:10", subject: "Data Structure & Algorithms Lab Grp-1", code: "PCC-CS391", teacher: "SS2, SP", room: "Lab-13", type: "lab", group: "G1" },
    { start: "13:10", end: "14:00", subject: "Break", type: "break" },
    { start: "14:00", end: "17:20", subject: "Data Structure & Algorithms Lab Grp-2", code: "PCC-CS391", teacher: "SS3, SP", room: "Lab-11", type: "lab", group: "G2" },
-  ],
+],
 };

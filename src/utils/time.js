@@ -1,9 +1,19 @@
 const IST = "Asia/Kolkata";
 
 export function nowIST() {
+  // Create a Date representing the current time in IST by formatting and re-parsing.
   const s = new Date().toLocaleString("en-US", { timeZone: IST });
   return new Date(s);
 }
+
+export function dateKeyIST(d = nowIST()) {
+  // Returns "YYYY-MM-DD" in IST
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
 
 export function formatTime12(hhmm) {
   const [h, m] = hhmm.split(":").map(Number);
@@ -13,10 +23,9 @@ export function formatTime12(hhmm) {
     hour: "numeric",
     minute: "2-digit",
     hour12: true,
-    timeZone: "Asia/Kolkata",
+    timeZone: IST,
   }).format(date);
 }
-
 
 export function toMinutes(hhmm) {
   const [h, m] = hhmm.split(":").map(Number);
@@ -38,7 +47,6 @@ export function formatHM(totalMinutes) {
   return `${hours}h ${minutes}m`;
 }
 
-
 export function formatHMS(ms) {
   if (ms <= 0) return "00:00";
   const s = Math.floor(ms / 1000);
@@ -49,13 +57,16 @@ export function formatHMS(ms) {
 
 // Find current and next session for a given day list
 export function getSessionsForNow(daySessions, nowMin) {
-  const withMinutes = daySessions.map(s => ({
-    ...s,
-    startMin: toMinutes(s.start),
-    endMin: toMinutes(s.end),
-  })).sort((a, b) => a.startMin - b.startMin);
+  const withMinutes = daySessions
+    .map((s) => ({
+      ...s,
+      startMin: toMinutes(s.start),
+      endMin: toMinutes(s.end),
+    }))
+    .sort((a, b) => a.startMin - b.startMin);
 
-  const current = withMinutes.find(s => nowMin >= s.startMin && nowMin < s.endMin) || null;
-  const upcoming = withMinutes.find(s => s.startMin > nowMin) || null;
+  const current =
+    withMinutes.find((s) => nowMin >= s.startMin && nowMin < s.endMin) || null;
+  const upcoming = withMinutes.find((s) => s.startMin > nowMin) || null;
   return { current, upcoming };
 }

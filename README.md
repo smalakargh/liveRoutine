@@ -269,6 +269,18 @@ npm run build -- --force
 
 ---
 
+## 👨‍💻 Maintained By
+
+**Smalakar** - Full Stack Developer
+
+- 🌐 **GitHub**: [@smalakargh](https://github.com/smalakargh)
+- 📧 **Contact**: Available through GitHub issues
+- 🚀 **Projects**: Building innovative web applications
+
+*Passionate about creating efficient, user-friendly applications that solve real-world problems.*
+
+---
+
 ## 📞 Support & Community
 
 - 🐛 **Bug Reports**: [Create an issue](https://github.com/smalakargh/liveRoutine/issues)

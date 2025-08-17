@@ -6,6 +6,9 @@ import App from './App.jsx'
 import { injectSpeedInsights } from '@vercel/speed-insights';
 injectSpeedInsights();
 
+import { inject } from '@vercel/analytics';
+inject();
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

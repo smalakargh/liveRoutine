@@ -22,7 +22,7 @@ export default function TopBar({
   return (
     <div className="w-full bg-purple-400 h-full text-white px-4 py-3 flex flex-col justify-center relative">
       {/* Status Dot */}
-      <div className="w-2 h-2 bg-red-500 rounded-full absolute top-4 left-4 z-4"></div>
+      <div className="w-2 h-2 border-1 border-red-300 bg-red-500 rounded-full absolute top-4 left-4 z-4"></div>
       <div className="w-3 h-3 bg-red-400 rounded-full z-0 animate-ping absolute top-[14px] left-[14px]"></div>
 
       {/* Date and Time */}
@@ -42,8 +42,8 @@ export default function TopBar({
               ? "Break Time"
               : current.subject || current.type.toUpperCase()
             : noMoreToday
-            ? <div className="text-[28px] text-center">No More Classes Today!</div>
-            : <div className="text-center text-[28px]">No ongoing class</div>}
+            ? <div className="text-[36px] text-center text-shadow-2xs ">No Classes !!!</div>
+            : <div className="text-center text-[28px] text-shadow-2xs ">No ongoing class</div>}
         </div>
       )}
 

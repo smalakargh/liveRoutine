@@ -10,9 +10,9 @@ Tuesday: [
    { start: "09:00", end: "12:20", subject: "Data Science Lab using Python", code: "PCC- DS391", teacher: "AD, UR, AS", room: "Lab-13", type: "class" },
    { start: "12:20", end: "13:10", subject: "Data Structure & Algorithm", code: "PCC-CS301", teacher: "HB", room: "Lab-13", type: "class" },
    { start: "13:10", end: "14:00", subject: "Break", type: "break" },
-   { start: "14:00", end: "14:50", subject: "Introduction to Data Science", code: "PCC-DS301", teacher: "AD", room: "8012", type: "class" },
-   { start: "14:50", end: "15:40", subject: "Computer Organization", code: "PCC-CS302", teacher: "LS", room: "8012", type: "class" },
-   { start: "15:40", end: "16:30", subject: "Economics for Engineers", code: "HSMC-301", teacher: "AC", room: "8012", type: "class" },
+   { start: "14:00", end: "15:40", subject: "Introduction to Data Science", code: "PCC-DS301", teacher: "AD", room: "8012", type: "class" },
+   { start: "15:40", end: "16:30", subject: "Computer Organization", code: "PCC-CS302", teacher: "LS", room: "8012", type: "class" },
+   { start: "16:30", end: "17:20", subject: "Economics for Engineers", code: "HSMC-301", teacher: "AC", room: "8012", type: "class" },
 ],
 
 Wednesday: [
